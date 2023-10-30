@@ -1,4 +1,4 @@
-package Exercise1;
+package CarFuel;
 
 class Car  {
     final double milage;

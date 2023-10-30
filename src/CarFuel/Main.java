@@ -1,4 +1,4 @@
-package Exercise1;
+package CarFuel;
 
 import java.util.Scanner;
 
