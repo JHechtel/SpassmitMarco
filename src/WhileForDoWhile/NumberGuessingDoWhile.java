@@ -9,6 +9,7 @@ public class NumberGuessingDoWhile {
         do {
             System.out.println("Zahl raten");
             numberGuessed = new Scanner(System.in).nextInt();
+
         }
 
         while (numberToGuess != numberGuessed);
