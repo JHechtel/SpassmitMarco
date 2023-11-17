@@ -1,4 +1,4 @@
-package Uebung0106;
+package Fraction;
 
 public class Fraction3Main {
     public static void main(String[] args) {
