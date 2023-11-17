@@ -1,30 +1,52 @@
-package Fraction;
+package Uebung0106;
 
 public class Fraction3 {
 
     int numerator;
     int denominator;
     void add(Fraction3 op) {
-        numerator = (numerator * op.denominator) +
-        (op.numerator * denominator);
+        numerator = (numerator * op.denominator) + (op.numerator * denominator);
         denominator = denominator * op.denominator;
     }
-
-    double toDouble() {
-        return numerator / (double) denominator;
+    void sub(Fraction3 op) {
+        Fraction3 frac = new Fraction3();
+        frac.numerator= -op.numerator;
+        frac.denominator= op.denominator;
+           add(frac);
     }
-
-    void sub(Fraction3 op){
-        numerator = (numerator * op.denominator) - (op.numerator * denominator);
+    void mul(Fraction3 op) {
+        numerator = numerator * op.numerator;
         denominator = denominator * op.denominator;
     }
+    void div(Fraction3 op) {
+        Fraction3 frac = new Fraction3();
+        frac.numerator= op.denominator;
+        frac.denominator= op.numerator;
+        mul(frac);
+    }
+    double toDouble(){
+        double result= numerator/(double) denominator;
+        return result;
+    }
+    static int gcd(int a, int b){
+        if (a==0) {
+            return b;
+        }
+        else {
+            while (b != 0) {
+                if (a > b) {
+                    a = a - b;
+                } else {
+                    b = b - a;
+                }}
+                return a;
+            }
 
-    void mul (Fraction3 op){
-        numerator=numerator*op.numerator;
-        denominator=denominator*op.denominator;
-    }
-    void div(Fraction3 op){
-        numerator=numerator*op.denominator;
-        denominator=denominator*op.numerator;
-    }
+        }
+    void reduce(){
+       int kurz= gcd(numerator,denominator);
+        numerator=numerator/kurz;
+        denominator=denominator/kurz;}
+
+
 }
