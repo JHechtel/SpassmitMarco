@@ -1,6 +1,6 @@
 package Fraction;
 
-public class Fraction3Main {
+class Fraction3Main {
     public static void main(String[] args) {
         Fraction3 myFraction1= new Fraction3();
         myFraction1.numerator=1;

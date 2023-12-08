@@ -1,6 +1,6 @@
 package Fraction;
 
-public class Fraction3 {
+class Fraction3 {
 
     int numerator;
     int denominator;
@@ -25,8 +25,7 @@ public class Fraction3 {
         mul(frac);
     }
     double toDouble(){
-        double result= numerator/(double) denominator;
-        return result;
+        return numerator/(double) denominator;
     }
     static int gcd(int a, int b){
         if (a==0) {
