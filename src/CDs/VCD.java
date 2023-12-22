@@ -1,4 +1,6 @@
 package CDs;
 
-public class VCD  extends CD{
+import java.io.Serializable;
+
+public class VCD  extends CD {
 }
